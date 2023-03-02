@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        .login-box {
+            width: 280px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: #fff;
+        }
+        
+        .login-box h1 {
+            float: left;
+            font-size: 40px;
+            border-bottom: 6px solid #4caf50;
+            margin-bottom: 50px;
+            padding: 13px 0;
+        }
+        
+        .login-box p {
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .login-box input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .login-box input[type="text"], input[type="password"] {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+        
+        .login-box input[type="submit"] {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #4caf50;
+            color: #e05656;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+        
+        .login-box input[type="submit"]:hover {
+            cursor: pointer;
+            background: #35b359;
+            color: #000;
+        }
+        
+    </style>
+</head>
+<body>
+	<div class="login-box">
+		<h1>Restaurant Login</h1>
+		<form>
+			<p>Username</p>
+			<input type="text" name="username" placeholder="Enter Username" required>
+			<p>Password</p>
+			<input type="password" name="password" placeholder="Enter Password" required>
+			<input type="submit" name="submit" value="Login">
+		</form>
+	</div>
+</body>
+</html>

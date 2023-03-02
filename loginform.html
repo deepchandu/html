@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title >Login Page</title>
+    <!-- bellow we are using the internal styles for giving styles to heads -->>
+    <h1>
+        Login Page 
+    </h1>
+    <!-- bellow is the internal style we use. -->
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(128, 57, 31);
+            font-style: italic ;
+        }
+        body{
+            background-color: rgba(103, 73, 35, 0.26);
+        }
+
+        fieldset{
+            color: rgba(43, 38, 2, 0.708);
+            background-color: rgba(105, 77, 112, 0.276);
+            padding: 1%;
+        }
+        
+    </style>
+    
+
+</head>
+<body>
+    
+    <form action="welcomepage.html" target="_parent">
+        
+        <legend style="color: rgb(3, 3, 3);font-weight: bold; font-size:large" >Enter your details</legend>
+        <fieldset>
+            
+        <label for="fname">Username: </label>
+        <input type="text" id="lname" name="lname" required><br><br>
+
+        <label for="fname">Enter your email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="pwd">Enter password:</label>
+        <input type="password" id="pwd" name="pwd" required><br><br>
+
+        <label for="Login">Login</label>
+        <input type="submit" id="Login" name="Login" value="Login" >
+
+       
+        <label for="forgotpassword">Forgot Password</label>
+       
+        <input type="reset" id="forgotpassword" name="forgotpassword" value="forgot password" onclick="alert('Link has been sent your Email')" ><br>
+        
+        
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>\

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title >Registration Form</title>
+    <!-- bellow we are using the internal styles for giving styles to heads -->>
+    <h1>
+        Registration Form 
+       </h1>
+
+       <!-- bellow is the internal style we use. -->
+    <style>
+        h1{
+            
+            text-align: center;
+            color: rgb(135, 64, 38);
+            font-style: italic ;
+        }
+        body{
+            background-color: rgba(90, 239, 216, 0.26);
+        }
+        fieldset{
+            padding: 1%;
+        }
+        
+    </style>
+</head>
+<body>
+    <legend style="color: rgb(3, 3, 3);font-weight: bold; font-size:large" >Enter your details</legend>
+    <fieldset style="background-color: rgba(166, 171, 176, 0.607);">
+        
+    <form action="loginform.html" target="_blank">
+        
+        <label for="fname">Enter your first name*: </label>
+        <input type="text" id="fname" name="fname" required><br><br>
+
+        <label for="fname">Enter your last name: </label>
+        <input type="text" id="lname" name="lname" required><br><br>
+
+        <label >Enter your date of birth: </label>
+        <input type="date" required><br><br>
+
+        <label for="branch">Select your gender:</label>
+    <select name="gender" id="gender" required>
+        <option value="">select gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Trance">Other</option>
+    </select>
+    <br><br>
+
+        <label for="">Enter your mobile number:</label>
+        <input type="number" id="mobile" name="mobile" required><br><br>
+
+        <label for="fname">Enter your email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="pwd">Enter password:</label>
+        <input type="password" id="pwd" name="pwd" required=""><br><br>
+
+        <label for="pwd">Enter confirm password:</label>
+        <input type="password" id="pwd" name="pwd" required><br><br>
+        
+        <label for="submit">Submit form:</label>
+        <input type="submit" id="submit" name="submit" required>
+
+        <label for="clear">Reset  form:</label>
+        <input type="reset" id="clear" name="clear"><br><br>
+    
+    </form>
+</fieldset>
+    
+</body>
+</html>
