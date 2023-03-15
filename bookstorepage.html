@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <style>
+        td,table 
+        {
+            padding-top: 2px;
+            padding-inline: 20px;
+            border: black;
+            border-collapse: collapse;
+        }
+        tr1{
+            width: 50%;
+            padding-top: 2px;
+            padding-inline: 20px;
+            border: black;
+            border-collapse: collapse;
+        }
+
+        #div1{
+            float: left;
+            width: 15%;
+        }
+        #div2{
+            
+            float: left;
+            width: 85%;
+        }
+
+        #div3{
+            padding-top: 60px;
+            text-align: center;
+            float: left;
+            width: 60%;
+        }
+        #div4{
+            float: right;
+            width: 40%;
+        }
+
+        .vertical {
+            border-left: 6px solid black;
+            height: 200px;
+            position:absolute;
+            left: 50%;
+        }
+    </style>
+
+
+</head>
+<body>
+    <fieldset style="width: 98%; border: 2px solid">
+    <table align="center" border="0" cellpadding="10" cellspacing="5" width="100%">
+       <br> <tr id="tr1">
+            <td colspan="2" style="text-align: left; font-size: larger;"><img src="data:image/jpeg;base64,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" alt="Logo"></td>
+            <td colspan="3" style="text-align: left; font-size: larger; width: 100px;"> Name of the Book Store</td>
+        </tr>
+    
+    </table>
+    <br>
+    <hr style="width: 100%; border: .1px solid ">
+    <table align="center" border="0" cellpadding="10" cellspacing="5" width="100%">    
+        <tr>
+            <br><td> Home</td>
+            <td>Latest Arrivals</td>
+            <td>Best Sellers</td>
+            <td>Contact Us</td>
+            <td>Search</td>
+        </tr>
+    </table><br>
+
+    <hr style="width: 100%; border: .1px solid ">
+    
+    <div id="div1">
+       <fieldset >
+        <Table>
+       <p>Computers</p>
+       <p>Electronics</p>
+       <p>Electrical</p>
+       <p>Bio-Tech</p>
+            <br><br>
+        </Table>
+    </fieldset>
+    </div>
+    
+    <div id="div2">
+        
+        <div id="div3">
+           
+        <table>
+            Description of the book Store(image, scroll, Text, etc...)
+
+        </table>
+        
+        </div>
+
+        <div id="div4">
+            <fieldset>
+            <form action="">
+                <label for="uname">Username:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="pwd">Password:</label>
+                <input type="text" id="pwd" name="pwd"><br><br>
+                <button style="text-align: center;">
+                    sign-in
+                </button><br><br>
+                New User <br><br>
+                <button style="text-align: center; padding-left: 20px;">Create Account</button>
+            </form>
+        </fieldset>
+        </div>
+    
+    </div>
+
+    
+</fieldset>
+
+</body>
+</html>
